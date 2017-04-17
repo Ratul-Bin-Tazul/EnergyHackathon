@@ -18,7 +18,10 @@
         <activity
             android:name=".MainScreenActivity"
             android:label="@string/title_activity_main_screen"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".officeLocationActivity" />
+        <activity android:name=".payBillsActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"></activity>
     </application>
 
 </manifest>
