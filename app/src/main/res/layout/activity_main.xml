@@ -40,7 +40,8 @@
         android:layout_height="wrap_content"
         android:text="Login"
         android:layout_marginTop="20dp"
-        style="@style/btnStyle"/>
+        style="@style/btnStyle"
+        android:id="@+id/login_btn"/>
 
         <TextView
             android:layout_width="match_parent"

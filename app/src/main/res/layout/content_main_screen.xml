@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.drbt.energyhackathon.MainScreenActivity"
+    tools:showIn="@layout/app_bar_main_screen"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/power_ministry_logo"/>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:elevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/side_nav_bar"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:text="A/C No. \n13513567"
+                    android:layout_weight="1"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:text="Meter No. \n DHK-16054"
+                    android:textColor="#fff"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/side_nav_bar"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Current Bill : 1203.12 BDT"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Estimeted Bill : 2050.33 BDT"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="#fff"
+                    android:text="Most power consuming device : Bedroom AC"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:fitsSystemWindows="true">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Add/Manage Electrical Device"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:drawableTop="@drawable/ic_add_white_24dp"
+            android:padding="10dp"
+            android:layout_gravity="fill"
+            style="@style/mainscreenText"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/side_nav_bar"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/side_nav_bar"
+            android:text="Usage"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:padding="10dp"
+            android:layout_gravity="fill_horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:drawableTop="@drawable/ic_timeline_white_24dp"
+
+            style="@style/mainscreenText"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/side_nav_bar"
+            android:text="Pay bills"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:drawableTop="@drawable/ic_assignment_white_24dp"
+
+            android:layout_gravity="fill"
+            style="@style/mainscreenText"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/side_nav_bar"
+            android:text="Office Location"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="fill_horizontal"
+            android:gravity="center"
+            android:drawableTop="@drawable/ic_location_on_white_24dp"
+            android:padding="10dp"
+            style="@style/mainscreenText"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+
+
+
+
+    </GridLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
