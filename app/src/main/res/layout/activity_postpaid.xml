@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_prepaid"
+    android:id="@+id/activity_postpaid"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -10,32 +10,27 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.drbt.energyhackathon.PrepaidActivity">
+    tools:context="com.drbt.energyhackathon.PostpaidActivity">
+
+    <TextView
+        style="@style/postPaidText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Current Bill : 1204.85 BDT" />
+
+    <TextView
+        style="@style/postPaidText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Due Bill : 2036.54.85 BDT" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="Pay by Recharch Card :" />
-
-    <EditText
-        style="@style/inputStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="15 digit recharge number" />
-
-    <Button
-        style="@style/btnStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Recharge" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="Or"
+        android:layout_marginBottom="15dp"
+        android:text="Pay By"
         android:textAlignment="center" />
 
 
